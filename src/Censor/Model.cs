@@ -10,11 +10,6 @@ public class FoundOpcodesRequest
     public Dictionary<string, int> Opcodes { get; set; }
 }
 
-public class CensoredOpcodesRequest
-{
-    public string GameVersion { get; set; }
-}
-
 public class CensoredOpcodesResponse
 {
     public string GameVersion { get; set; }

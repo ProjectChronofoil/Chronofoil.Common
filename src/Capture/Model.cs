@@ -22,11 +22,6 @@ public class CaptureUploadResponse
     public bool PublicWhenEos { get; init; }
 }
 
-public class CaptureDeletionRequest
-{
-    public Guid CaptureId { get; init; }
-}
-
 public class CaptureListElement
 {
     public Guid CaptureId { get; init; }

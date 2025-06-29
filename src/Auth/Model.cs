@@ -21,8 +21,3 @@ public class AccessTokenResponse
     public required string RefreshToken { get; init; }
     public required long ExpiresIn { get; init; } // seconds
 }
-
-public class AcceptTosRequest
-{
-    public int TosVersion { get; init; }
-}
