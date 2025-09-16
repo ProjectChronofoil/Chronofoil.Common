@@ -45,9 +45,7 @@ public interface IChronofoilClient
         [Body] FoundOpcodesRequest request);
 
     [Get($"{Routes.CensorV1}/opcodes")]
-    Task<ApiResult<CensoredOpcodesResponse>> GetOpcodes(
-        [Authorize] string token, 
-        [Query] string gameVersion);
+    Task<ApiResult<CensoredOpcodesResponse>> GetOpcodes([Query] string gameVersion);
 
     // InfoController endpoints
     [Get($"{Routes.InfoV1}/tos")]
